@@ -11,7 +11,8 @@ datasource db {
 }
 
 model RideRequest {
-  reqID  String       @unique
+  id     Int    @id @default(autoincrement())
+  reqID  String      
   from   String
   to     String
   budget Int
